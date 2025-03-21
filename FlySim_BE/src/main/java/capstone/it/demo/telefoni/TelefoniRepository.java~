@@ -1,0 +1,9 @@
+package capstone.it.demo.telefoni;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TelefoniRepository extends JpaRepository < Telefoni, Integer> {
+
+    public Telefoni findByNumeroSeriale(int NumeroSeriale);
+    public Telefoni findByMarca(String Marca);
+}
